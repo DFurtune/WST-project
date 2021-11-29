@@ -1,0 +1,535 @@
+@font-face{
+    font-family: 'BBC Reith Sans';
+    src: url('../styles/BBCReithSans_V2.300/Web/EOT/BBCReithSans_W_Rg.eot');
+    src: url('../styles/BBCReithSans_V2.300/Web/EOT/BBCReithSans_W_Rg.eot?iefix') format('eot'),
+    url('../styles/BBCReithSans_V2.300/Web/WOFF/BBCReithSans_W_Rg.woff') format('woff'),
+    url('../styles/BBCReithSans_V2.300/Desktop/BBCReithSans_Rg.ttf') format('truetype');    
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@media (min-width: 1024px){
+    body{
+        max-width: 1445px;
+        margin: 0 auto;
+
+        header{
+            width: 100%;
+            height: 42px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            .logo{
+                width: 105px;
+                height: 40px;
+                background-image: url(/img/Logo.svg);
+                background-repeat: no-repeat;
+                margin-top: 5px;
+                margin-left: 7%;
+            }
+            .menu{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                width: 93%;
+                .menu-element{
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 80%;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: -0.32px;
+                    :hover{
+                        color: #2E75FF;
+                        border: 2px solid #EAEDF5;
+                        border-radius: 8px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #45494F;
+                        border: 2px solid transparent;
+    
+                    }
+                }
+            }
+        }
+        .desktop-title{
+            display: flex;
+            padding-top: 103px;
+            .desktop-title__left-box{
+                width: 30vw;
+                margin-left: 8.16%;
+                span{
+                    font-family: 'BBC Reith Sans';
+                    font-weight: bold;
+                    font-size: 34px;
+                    line-height: 52px;
+                    text-align: center;
+                    letter-spacing: -0.4px;
+                    color: #1652AC; 
+                }
+                .desktop-line{
+                    background-color: #EDEFF3;
+                    width: 40%;
+                    height: 7px;
+                    margin-top: 55px;
+                }
+                p{
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-size: 16px;
+                    line-height: 32px;
+                    letter-spacing: -0.004em; 
+                    margin-top: 55px;
+                }
+            }
+            .desktop-title__right-box{
+                width: 60%;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 45vw;
+                    height: 655px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: -50px;
+                }
+            }
+        }
+
+        .desktop-title-bottom{
+            display: flex;
+            img{
+                margin-left: 8.16%;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            span{
+                font-family: 'BBC Reith Sans';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 40px;
+                letter-spacing: 2.42px;
+                color: #1652AC;
+                margin-left: 15%;
+            }
+            p{
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-size: 16px;
+                line-height: 32px;
+                letter-spacing: -0.004em;
+                margin-right: 11.76%;
+                margin-left: 15%;
+            }
+        }
+
+        .title{
+            display: none;
+        }
+        .container{
+            display: none;
+        }
+
+        .standarts-container{
+            display: flex;
+            position: relative;
+            img{
+                width: 45%;
+            }
+            .standarts-container__text{
+                width: 55%;
+                background: linear-gradient(180deg, #163DA2 0%, #003584 100%);
+                padding-left: 12%;
+                padding-right: 12%;
+                padding-top: 150px;
+                span{
+                    display: block;
+                    font-family: 'BBC Reith Sans';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 40px;
+                    letter-spacing: 2.42px;
+                    color: #FBFDFF;
+                }
+                p{
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 32px;
+                    letter-spacing: -0.4px;
+                    color: #FBFDFF;
+                }
+            }
+        }
+
+        .gradients-line{
+            display: flex;
+            margin-left: 8.16%;
+            .gradients-line__mobile-img{
+                display: none;
+            }
+            .gradients-line__desktop-img{
+                margin-top: -150px;
+                width: 60%;
+            }
+            span{
+                font-family: 'BBC Reith Sans';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 40px;
+                letter-spacing: 2.42px;
+                text-transform: uppercase;
+                color: #004FC7;
+                position: relative;
+                display: block;
+                margin-top: 90px;
+            }
+            p{
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 32px;
+                color: #45494F;
+            }
+        }
+        
+        .advantages{
+            width: 100%;
+            background-color: #FBFBFC;
+            span{
+                display: block;
+                font-family: 'BBC Reith Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 40px;
+                letter-spacing: 4.42px;
+                color: #020303;
+                text-align: center;
+                padding-top: 70px;
+            }
+            .advantages-block{
+                width: 80%;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+                flex-wrap: wrap;
+                .advantages-block__element{
+                    display: flex;
+                    width: 30%;
+                    background: #FFFFFF;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 16px;
+                    height: 135px;
+                    margin: 8px;
+                    flex-grow: 1;
+    
+                    img{
+                        margin-left: 30px;
+                        width: 50px;
+                        height: 50px;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                    p{
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 32px;
+                        letter-spacing: -0.4px;
+                        color: #45494F;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-left: 20px;
+                    }
+                }
+                .advantages-block__element:nth-child(10){
+                    margin-right: 67%;
+                }
+                .advantages-block__lastelement{
+                    display: block;
+                    width: 100%;
+                    background: #FFFFFF;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 16px;
+                    margin-bottom: 8px;
+                    margin-top: 60px;
+                    span{
+                        margin-top: 46px;
+                    }
+                    ol{
+                        column-count: 2;
+                        margin-top: 70px;
+                        padding: 0;
+                        margin-left: 70px;
+                        margin-bottom: 70px;
+                        li{
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-size: 17px;
+                            line-height: 35px;
+                            letter-spacing: -0.4px;
+                            color: #45494F;
+                            margin-bottom: 35px;
+                            width: 82%;
+                        }
+                        hr{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .slider-block{
+            background-color: #FBFBFC;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            span{
+                display: block;
+                font-family: 'BBC Reith Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                text-align: center;
+                line-height: 40px;
+                letter-spacing: 4.42px;
+                color: #020303;
+                margin-bottom: 25px;
+                margin-top: 75px;
+            }
+            #slider .hcg-slide-container {
+                width: 100%;
+                height: auto;
+            }
+            .hcg-slider {
+                text-align: center;
+            }
+            .hcg-slide-container {
+                max-width: 100%;
+                display: inline-block;
+                position: relative;
+            }
+            .hcg-slides {
+                display: none;
+                text-align: center;
+                overflow: hidden;
+            }
+            .hcg-slides img {
+                width: 40%;
+                max-width: 100%;
+                max-height: 100%;
+                display: inline-block;
+                border-radius: 8px;
+                border: solid 1px #a0a0a0;
+                vertical-align: middle;
+            }
+            .hcg-slide-prev, .hcg-slide-next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                color: 3px solid #004FC7;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                text-decoration: none;
+                background-color: #FFFFFF;
+            }
+            .hcg-slide-next {
+                right: 25%;
+                border-radius: 8px;
+            }
+            .hcg-slide-prev {
+                left: 25%;
+                border-radius: 8px;
+            }
+            .hcg-slide-dot-control {
+                margin-top: 10px;
+                text-align: center;
+                margin-bottom: 45px;
+            }
+            .hcg-slide-dot {
+                cursor: pointer;
+                height: 9px;
+                width: 9px;
+                margin: 0 10px;
+                background-color: #80ABFF;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            .hcg-slide-dot.dot-active {
+                background-color: #004FC7;
+            }
+            .buttons-block{
+                width: 80%;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+                flex-wrap: wrap;
+                button{
+                    display: block;
+                    flex-grow: 1;
+                    width: 30%;
+                    height: 64px;
+                    background: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+                    border: 1px solid #FFFFFF;
+                    box-sizing: border-box;
+                    box-shadow: 0px 1px 4px rgba(48, 67, 133, 0.5);
+                    border-radius: 12px;
+                    font-family: 'BBC Reith Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 1.42px;
+                    color: #FAFBFE;
+                    margin: 4px;
+                    cursor: pointer;
+                }
+                :last-child{
+                    opacity: 0;
+                    cursor: default;
+                }
+    
+            }
+        }   
+
+        .contact{
+            display: none;
+        }
+
+        .contact-desktop{
+            display: flex;
+            margin-top: 73px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 83%;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                font-family: 'BBC Reith Sans';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 26px;
+                line-height: 43px;
+                letter-spacing: -0.4px;
+                color: #1652AC;
+                width: 35%;
+            }
+            .contact__text{
+                width: 35%;
+                p{
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 32px;
+                    letter-spacing: -0.4px;
+                    color: #45494F;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                button{
+                    display: block;
+                    width: 70%;
+                    height: 64px;
+                    background: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+                    border: 1px solid #FFFFFF;
+                    box-sizing: border-box;
+                    box-shadow: 0px 1px 4px rgba(48, 67, 133, 0.5);
+                    border-radius: 12px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    span{
+                        font-family: 'BBC Reith Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 26px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }    
+            }
+        }
+
+        footer{
+            background-color: #FBFBFC;
+            .contacts{
+                display: flex;
+                justify-content: space-around;
+                .contacts-item{
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    span{
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 32px;
+                        letter-spacing: -0.4px;
+                        color: #A3ADBA;
+                    }
+                    p{
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 32px;
+                        letter-spacing: -0.4px;
+                        color: #9EABBB;
+                            a{
+                            color: #7C848D;
+                            text-decoration: none;
+                        }
+                        .mail{
+                            color: #0C5CD6;
+                        }
+    
+                    }
+                    ul{
+                        list-style: none;
+                        column-count: 2;
+                        margin-left: -40px;
+
+                        li{
+                            a{
+                                font-family: 'Noto Sans';
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 32px;
+                                letter-spacing: -0.4px;
+                                text-decoration-line: underline;
+                                color: #9EABBB;    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+
+    }
+}
